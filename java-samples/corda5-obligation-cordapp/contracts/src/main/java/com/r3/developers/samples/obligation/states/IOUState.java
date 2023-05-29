@@ -23,6 +23,7 @@ public class IOUState implements ContractState {
     public List<PublicKey> participants;
 
 
+
     @ConstructorForDeserialization
     public IOUState(int amount, MemberX500Name lender, MemberX500Name borrower, int paid, UUID linearId, List<PublicKey> participants) {
         this.amount = amount;
